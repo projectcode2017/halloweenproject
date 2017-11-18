@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya|Nosifer');
+
+header {
+    /*height:250px;*/
+    padding: 5px 0;
+}
+
+header h1, header h2 {
+    margin: 0;
+}
+
+footer {
+    height: 50px;
+}
+body {
+    font-family: 'Alegreya', serif;
+    background-color: #F46B39;
+}
+
+p { 
+    font-family: 'Alegreya', serif;
+    font-size: large;
+}
+
+header, footer {
+    font-family: 'Nosifer', cursive;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Nosifer', cursive;
+    text-align: center;
+    font-size: 75px;
+}
+  
+h2, h3 {
+    font-family: 'Nosifer', cursive;
+    text-align: center;
+    font-size: 25px;
+}
+
+.topnav {
+    background-color: #000000;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    border: thick grey solid;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 30px 30px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.topnav a:hover {
+    background-color: #D3D3D3;
+    color: red;
+}
+
+.darkness {
+    display: flex;
+}
+
+.text {
+    display: flex; 
+}
+
+li a {
+    display: block;
+    /*width: 100px;*/
+}
+.sidenav {
+    background-color: #000000;
+    /*overflow: hidden;*/
+    text-align: center;
+    border: thick grey solid;
+    width: 250px;
+}
+
+.sidenav a {
+    display: flex;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 30px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.sidenav a:hover {
+    background-color: #D3D3D3;
+    color: red;
+}
+
+.cover-page-image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cover-page-image div {
+    margin: 10px;
+    width: 40%;
+    height: 700px;
+    border: thick grey solid;
+}
+
+/*.cover-page-image div img {*/
+/*    width: 100%;*/
+/*}*/
+
+.cover-page-image1 {
+    background-image: url("../images/ravennewmoon.jpg");
+    background-size: cover;
+}
+
+.cover-page-image2 {
+    background-image: url("../images/halloween_stories.jpg");
+    background-size: cover;
+}
+.cover-page-image3 {
+    background-image: url("../images/candyapples.jpg");
+    background-size: cover;
+}
+
+.cover-page-image4 {
+    background-image: url("../images/sunrisegraves.jpg");
+    background-size: cover;
+}
+
+.cover-page-image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cover-page-image div {
+    margin: 10px;
+    width: 40%;
+    height: 700px;
+    border: thick grey solid;
+}
+
+/*.cover-page-image div img {*/
+/*    width: 100%;*/
+/*}*/
+
+.poems-page-image {
+    width: calc(100vw - 260px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.poems-page-image div {
+    margin: 10px;
+    width: 40%;
+    height: 700px;
+    border: thick grey solid;
+}
+
+.poems-page-image1 {
+    background-image: url("../images/ravenlake.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.poems-page-image2 {
+    background-image: url("../images/raventree.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.poems-page-image3 {
+    background-image: url("../images/moonshadow.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.poems-page-image4 {
+    background-image: url("../images/graves.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+/* entire container, keeps perspective */
+
+#flipper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-shadow: 8px 8px 10px #aaa;
+}
+
+.flip-container {
+	perspective: 1000px;
+	background-position: center center;
+}
+
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+	transform: rotateY(180deg);
+	background-position: center center;
+}
+
+.flip-container, .front, .back {
+	width: 320px;
+	height: 480px;
+	background-position: center center;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+	background-position: center center;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+
+/* Bloody Recipes */
+
+#recipes {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 100%;
+}
+
+#recipes>div {
+    margin: 10px;
+    width: 40%;
+   /* height: 800px;*/
+    border: thick grey solid;
+}
+
+.cookies {
+    text-align: center;
+}
+
+/* Stone Dead Authors page */
+#stonedead {
+  width: 100%;
+/*  overflow-y: scroll;*/
+}
+
+.cardmr {
+  background-color: #000000;
+  color: white;
+  margin: 10px;
+  box-shadow: 5px 5px 10px #003500;
+  display: flex;
+  align-items: center;
+}
+
+.card-reversemr {
+  flex-direction: row-reverse;
+}
+
+/*#content {*/
+/*  overflow-y: scroll;*/
+/*}*/
+
+.card-imagemr {
+  margin: 0 5px;
+}
+
+.card-imagemr img {
+  width: 100%;
+}
+
+.card-textmr {
+  margin: 0 5px;
+}
+
+.card img {
+  width:20%;
+}
+
+.card-content {
+  overflow:auto;
+}
+
+.floating-left {
+  float:left;
+}
+
+.clear-float {
+  clear:both;
+}
+
+#navigation {
+  font-family: 'Nosifer', cursive;
+  border: 5px solid green;
+  background-color: black;
+}
+
+#navigation a {
+    color: #F46B39;
+}
